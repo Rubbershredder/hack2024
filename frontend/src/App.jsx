@@ -15,18 +15,13 @@ function App() {
         <main>
           <Suspense fallback={<div>Loading...</div>}>
             <Routes>
-              <Route path="/home" element={<HomePage />} />{" "}
+              <Route path="/" element={<HomePage />} />{" "}
               {/* Updated to HomePage */}
               <Route path="/tripPlanner" element={<TripPlanner />} />
               <Route path="/quest-mode" element={<QuestMode />} />
             </Routes>
           </Suspense>
         </main>
-
-        {/* Footer */}
-        <footer>
-          <p>&copy; 2024 Your App Name</p>
-        </footer>
       </div>
     </Router>
   );
