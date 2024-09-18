@@ -43,13 +43,11 @@ export default function Component() {
         <p className="text-lg sm:text-xl mb-8">
           Build, personalize, and optimize your itineraries with our free AI trip planner. Designed for vacations, workations, and everyday adventures. 🏖️🏙️🏔️
         </p>
-        <button className="px-6 py-3 bg-teal-500 text-white rounded-md text-lg font-semibold hover:bg-teal-600">
-          📝 Create a new trip
-        </button>
+        
         <div className="mt-16">
-          <h2 className="text-2xl sm:text-3xl font-bold mb-4">Trip Planner AI is now part of Layla 🎉</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-4">Trip Planner AI Chat is now available 🎉</h2>
           <p className="text-base sm:text-lg">
-            Trip Planner AI, the original AI trip planner trusted by millions, is now part of Layla.
+            
           </p>
         </div>
         <div className="mt-16 max-w-2xl mx-auto">
