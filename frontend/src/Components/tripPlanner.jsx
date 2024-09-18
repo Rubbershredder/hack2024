@@ -53,23 +53,26 @@ export default function Component() {
           </p>
         </div>
         <div className="mt-16 max-w-2xl mx-auto">
-          <form onSubmit={handleChatSubmit} className="flex items-center">
-            <input
-              type="text"
-              value={chatInput}
-              onChange={(e) => setChatInput(e.target.value)}
-              placeholder="Ask anything..."
-              className="flex-grow px-4 py-2 rounded-l-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-teal-500"
-              aria-label="Chat input"
-            />
-            <button
-              type="submit"
-              className="px-4 py-3 bg-teal-500 text-white rounded-r-md hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-500"
-              aria-label="Send message"
-            >
-              <Send className="w-5 h-5" />
-            </button>
-          </form>
+        <form onSubmit={handleChatSubmit} className="flex items-center">
+  <input
+    type="text"
+    value={chatInput}
+    onChange={(e) => setChatInput(e.target.value)}
+    placeholder="Ask anything..."
+    className={`flex-grow px-4 py-2 rounded-l-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-teal-500 ${
+      isDarkMode ? 'bg-gray-700 text-white placeholder-gray-400' : 'bg-white text-black placeholder-gray-500'
+    }`}
+    aria-label="Chat input"
+  />
+  <button
+    type="submit"
+    className="px-4 py-3 bg-teal-500 text-white rounded-r-md hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-500"
+    aria-label="Send message"
+  >
+    <Send className="w-5 h-5" />
+  </button>
+</form>
+
           <p className="text-sm text-gray-500 mt-2">
             We'd love to hear your suggestions for improvement. Click to share any feedback.
           </p>
